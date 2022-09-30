@@ -1,0 +1,91 @@
+main {
+  height: 200vh;
+}
+
+.hero {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.273), rgba(0, 0, 0, 0.415)),
+    url(bg.jpg);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .logo {
+    max-width: 250px;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    background-color: rgb(15, 15, 15);
+    padding: 2rem;
+    border-radius: 15px;
+  }
+}
+
+.newsFeed {
+  padding: 2rem;
+
+  h1 {
+    font-size: 3rem;
+    color: rgb(15, 15, 15);
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 10px;
+      background-color: rgb(107, 13, 158);
+      border-radius: 5px;
+    }
+  }
+
+
+  .news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+    .newsItem {
+      width: 400px;
+      height: 300px;
+      margin-bottom: 2rem;
+      background-color: rgb(15, 15, 15);
+      padding: 1rem;
+      border-radius: 15px;
+      color: white;
+      background-image: url(https://zs-belzyce.edu.pl/wp-content/uploads/2022/09/309230423_435652838551974_114629519002454157_n-Maly.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+
+      .title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 1rem;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+
+
+    }
+  }
+
+
+
+
+}
